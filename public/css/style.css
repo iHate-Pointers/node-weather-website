@@ -1,0 +1,89 @@
+/* Sticky footer using flex-box */
+footer{
+    color: #9a9898;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0; 
+}
+header{
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+h1{
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+header a{ /*Targetting only links inside header */
+    color: #9a9898;
+    margin-right: 16px;
+    text-decoration: none;
+    font-size: larger; 
+}
+body{
+    color: #3c3535;
+    text-decoration: solid;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex; /*Default value is row*/
+    flex-direction: column;
+    min-height: 100vh /*view port height*/
+}
+p,li{
+    font-size: larger;
+    max-width: 650px;
+}
+a:hover{
+    color: #ce0e0e;
+    text-decoration: underline;
+}
+form{
+    padding: 40px 0;
+}
+.main-class-js{
+    flex-grow: 1; /*grow to as much space as it needs*/
+}
+.portrait{
+    float: left;
+    width: 350px;
+    border-radius: 50%;
+    position: relative;
+    left: 750px;
+    top: -750px;
+}
+.title-pg{
+    font-weight: bold;
+    display:inline-block;
+    vertical-align: top;
+    position: relative;
+    right: 100px;
+    padding-top: 50px;
+}
+#mess-1{
+    /* font-family: "Dank Mono", ui-monospace, monospace; */
+    font-size: larger;
+    display: block;
+    text-decoration: solid;
+}
+#mess-2{
+    text-align: center;
+}
+.form-control-lg{
+    font-family: "Dank Mono", ui-monospace, monospace;
+}
+.small-logo{
+    position: relative;
+    right: 130px;
+    top: 55px;
+    width: 80px;
+    border-radius: 50%;
+}
+.question-1{
+    text-decoration: underline;
+}
+.answer-1{
+    color: #9a9898;
+    border-bottom: 1px solid #eeeeee;
+    font-family: "Dank Mono", ui-monospace, monospace;
+}
