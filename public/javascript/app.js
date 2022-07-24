@@ -1,4 +1,4 @@
-console.log('Client side JS file has been Loaded')
+console.log('Client side JS file has been Loaded!')
 //Getting the data into the Client SIde
 
 //We are using fetch into javascript, can only be accessed in javascript, and not in nodejs
