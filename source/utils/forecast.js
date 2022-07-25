@@ -1,6 +1,5 @@
 //This API is to fetch the forecast API
 const request = require('request')
-const { showHelpOnFail } = require('yargs')
 
 const forecast = (latitude, longitude , callback) => {
     const url = `http://api.weatherstack.com/current?access_key=c4c68f34f6bafe00713617814d3dbd9e&query=${latitude},${longitude}&units=m`
