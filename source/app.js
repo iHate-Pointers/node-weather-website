@@ -8,7 +8,6 @@ const geoCode = require('./utils/geocode.js')
 // console.log(path.join(__dirname, '../public')) // .. means going back once, to use it again seperate by slash ../..
 
 const app = express()
-
 const port = process.env.PORT || 3000;
 
 const publicDirectoryPath = path.join(__dirname, '../public')
