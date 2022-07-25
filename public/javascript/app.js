@@ -34,7 +34,8 @@ weatherForm.addEventListener('submit', (e) => {
     e.preventDefault(); 
     //Browser refreshed/reloads once we submit which is default behaviour
     const location = search.value;
-    fetch(`http://localhost:3000/weather?address=${location}`).then(res =>{
+    // fetch(`http://localhost:3000/weather?address=${location}`).then(res =>{
+    fetch(`/weather?address=${location}`).then(res =>{ //This line after we setup heroku, VImp Line 114
         res.json().then(data => {
             if (data.error){
                 messageOne.textContent = data.error;

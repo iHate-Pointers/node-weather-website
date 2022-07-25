@@ -8,6 +8,9 @@ const geoCode = require('./utils/geocode.js')
 // console.log(path.join(__dirname, '../public')) // .. means going back once, to use it again seperate by slash ../..
 
 const app = express()
+
+const port = process.env.PORT || 3000;
+
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views') //When we customize the name of views To Templates
 const partialsPath = path.join(__dirname, '../templates/partials') 
@@ -136,6 +139,6 @@ app.get('*', (req, res) => { // This * indicates if any other besides the above 
 
 
 //To start the server, we need this only
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Server has been started at Port 3000') //Only be displayed in the console
 }) //Start the server at Port 3000 (temporary port), Stays up and keeps on running
