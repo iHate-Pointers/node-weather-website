@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node source/app.js -e js,hbs,css,html,json"
+    "start": "node source/app.js -e js,hbs,css,html,json",
+    "dev": "nodemon src/app.js -e js,hbs,css,html,json"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +17,8 @@
     "latest-version": "^7.0.0",
     "npm": "^8.15.0",
     "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.2.0"
   }
 }
