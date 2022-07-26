@@ -13,7 +13,7 @@ const forecast = (latitude, longitude , callback) => {
             callback('Invalid Location, Not Found in our directory', undefined)
         }
         else{
-            callback(undefined, `${body.current.weather_descriptions}. It is currently ${body.current.temperature}\xB0C out in ${body.location.name},${body.location.country} and feels like ${body.current.feelslike}\xB0C. Precipitation is ${body.current.precip}`)
+            callback(undefined, `${body.current.weather_descriptions}. It is currently ${body.current.temperature}\xB0C out in ${body.location.name},${body.location.country} and feels like ${body.current.feelslike}\xB0C. Precipitation is ${body.current.precip}mm, the air humidity level is ${body.current.humidity}%. You can see as far as ${body.current.visibility}km!! The atmospheric pressure in the location is ${body.current.pressure}mb, the amount of cloud covering is sky is ${body.current.cloudcover}%. The direction is wind is ${body.current.wind_dir}. The observation time of the mentioned conditions is ${body.current.observation_time}`)
         }
     })
 }
